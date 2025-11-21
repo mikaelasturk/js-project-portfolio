@@ -8,8 +8,6 @@ import { ProjectSection } from "./Components/sections/ProjectSection"
 export const App = () => {
   return (
     <>
-      <p>hej</p>
-      
       {/* <HeroSection />
       <TechSection /> */}
       <ProjectSection/>

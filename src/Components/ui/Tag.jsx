@@ -1,8 +1,8 @@
-export const Tag = (project) => {
+export const Tag = (props) => {
   return (
     <>
       <span className="tag">
-        {project.tag}
+        {props.tag}
       </span>
     </>
   )

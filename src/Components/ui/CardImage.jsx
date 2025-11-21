@@ -1,7 +1,7 @@
-export const CardImg = (project) => {
+export const CardImg = (props) => {
   return (
     <>
-      <img className="card-img" src={project.image} alt={project.alt}/>
+      <img className="card-img" src={props.image} alt={props.alt}/>
     </>
   )
 }

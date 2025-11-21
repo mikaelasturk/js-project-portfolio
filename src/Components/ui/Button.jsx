@@ -1,7 +1,7 @@
-export const Button = () => {
+export const Button = (props) => {
   return (
     <>
-      <button>Hej</button>
+      <a href={props.link}></a>
     </>
   )
 }
