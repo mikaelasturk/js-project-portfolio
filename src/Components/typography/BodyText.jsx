@@ -1,8 +1,8 @@
-export const BodyText = (props) => {
+export const BodyText = ({ text }) => {
   return (
     <>
       <p className="body-text">
-        {props.description}
+        {text}
       </p>
     </>
   )

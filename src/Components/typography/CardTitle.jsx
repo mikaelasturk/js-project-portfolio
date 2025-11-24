@@ -1,8 +1,8 @@
-export const CardTitle = (props) => {
+export const CardTitle = ({ title }) => {
   return (
     <>
       <h3 className="card-title">
-        {props.name}
+        {title}
       </h3>
     </>
   )

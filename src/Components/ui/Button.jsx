@@ -1,7 +1,10 @@
-export const Button = (props) => {
+export const Button = ({ href, children, text} ) => {
   return (
     <>
-      <a href={props.link}></a>
+      <a href={href}>
+        {children}
+        {text}
+      </a>
     </>
   )
 }
