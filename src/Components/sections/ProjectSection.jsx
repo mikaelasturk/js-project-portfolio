@@ -1,6 +1,6 @@
-import { SectionTitle } from "../Typography/SectionTitle.jsx"
-import { ProjectCard } from "../Cards/ProjectCard.jsx"
-// import projects from "../../data/projects.json"
+import { SectionTitle } from "../typography/typography"
+import { ProjectCard } from "../cards/cards"
+// import projects from "../../data/projects"
 
 export const ProjectSection = () => {
   return (

@@ -1,8 +1,6 @@
-import { CardImg } from "../ui/CardImage.jsx"
-import { CardTitle } from "../typography/CardTitle.jsx"
-import { BodyText } from "../typography/BodyText.jsx"
-import { Tag } from "../ui/Tag.jsx"
-import { Button } from "../ui/Button.jsx"
+import { CardImg, Tag, Button } from "../ui/ui"
+import { CardTitle, BodyText } from "../typography/typography"
+
 
 export const ProjectCard = () => {
   return (
@@ -11,6 +9,7 @@ export const ProjectCard = () => {
       <CardTitle />
       <BodyText />
       <Tag />
+      <Button />
       <Button />
     </>
   )
