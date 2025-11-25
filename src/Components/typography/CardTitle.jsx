@@ -1,9 +1,7 @@
 export const CardTitle = ({ title }) => {
   return (
-    <>
-      <h3 className="card-title">
-        {title}
-      </h3>
-    </>
+    <h3 className="card-title">
+      {title}
+    </h3>
   )
 }

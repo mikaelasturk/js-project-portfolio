@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "name": "Text",
+      "image": "",
+      "date": "month year",
+      "alt": "Text",
+      "description": "Text",
+      "link": ""
+    },
+    {
+      "name": "Text",
+      "image": "",
+      "date": "month year",
+      "alt": "Text",
+      "description": "Text",
+      "link": ""
+    }
+  ]
+}

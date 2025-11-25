@@ -5,12 +5,15 @@ import {
   ArticleSection, 
   SkillsSection, 
   ContactSection 
-} from "./Components/sections/sections"
+} from "./components/sections/sections"
 
 export const App = () => {
   return (
     <>
+      <HeroSection/>
+      <TechSection/>
       <ProjectSection/>
+      <ArticleSection/>
     </>
   )
 }

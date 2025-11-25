@@ -1,9 +1,7 @@
 export const Tag = ({ tag }) => {
   return (
-    <>
-      <span className="tag">
-        {tag}
-      </span>
-    </>
+    <span className="tag">
+      {tag}
+    </span>
   )
 }

@@ -1,9 +1,7 @@
 export const SectionTitle = ({ title }) => {
   return (
-    <>
-      <h2 className="section-title">
-        {title}
-      </h2>
-    </>
+    <h2 className="section-title">
+      {title}
+    </h2>
   )
 }

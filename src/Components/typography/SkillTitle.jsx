@@ -1,9 +1,7 @@
 export const SkillTitle = ({ title }) => {
   return (
-    <>
-      <h3 className="skill-title">
-        {title}
-      </h3>
-    </>
+    <h3 className="skill-title">
+      {title}
+    </h3>
   )
 }

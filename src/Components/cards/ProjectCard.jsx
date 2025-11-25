@@ -5,34 +5,18 @@ import { GlobeIcon, GithubIcon } from "../svg-icons/svg-icons"
 export const ProjectCard = ({ project }) => {
   return (
     <>
-      <CardImage 
-        src={project.image} 
-        alt={project.alt} 
-      />
-      
-      <CardTitle 
-        title={project.name} 
-      />
+      <CardImage src={project.image} alt={project.alt}v/>
+      <CardTitle title={project.name} />
+      <BodyText text={project.description} />
 
-      <BodyText 
-        text={project.description}
-      />
       {project.tags.map(tag => (
-        <Tag 
-        key={tag} 
-        tag={tag} />
+        <Tag key={tag} tag={tag} />
       ))}
-      <Button 
-      href={project.netlify} 
-      text= "Live demo"
-      >
+
+      <Button href={project.netlify} text= "Live demo">
         <GlobeIcon />
       </Button>
-
-      <Button 
-      href={project.github} 
-      text= "View the code"
-      >
+      <Button href={project.github} text= "View the code">
         <GithubIcon />
       </Button>
     </>
