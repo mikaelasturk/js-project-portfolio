@@ -1,7 +1,6 @@
-import avatar from "../../assets/images/avatar.jpg"
 
-export const Avatar = () => {
+export const Avatar = ({ src }) => {
   return (
-    <img className="avatar" src={avatar} alt="Avatar of Mikaela" />
+    <img className="avatar" src={src} alt="Avatar of Mikaela" />
   )
 }

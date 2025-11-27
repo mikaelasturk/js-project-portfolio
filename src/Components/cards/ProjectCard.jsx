@@ -1,4 +1,4 @@
-import { CardImage, Tag, Button } from "../ui/ui"
+import { CardImage, Tag, Button, SvgIcon} from "../ui/ui"
 import { CardTitle, BodyText } from "../typography/typography"
 import { GlobeIcon, GithubIcon } from "../svg-icons/svg-icons"
 
@@ -14,10 +14,10 @@ export const ProjectCard = ({ project }) => {
       ))}
 
       <Button href={project.netlify} text= "Live demo">
-        <GlobeIcon />
+        <SvgIcon icon={<GlobeIcon />} />
       </Button>
       <Button href={project.github} text= "View the code">
-        <GithubIcon />
+        <SvgIcon icon={<GithubIcon />} />
       </Button>
     </>
   )

@@ -1,4 +1,4 @@
-import { CardImage, Tag, Button } from "../ui/ui"
+import { CardImage, Tag, Button, SvgIcon } from "../ui/ui"
 import { CardTitle, BodyText } from "../typography/typography"
 import { DocumentIcon } from "../svg-icons/svg-icons"
 
@@ -10,7 +10,7 @@ export const ArticleCard = ({ article }) => {
       <CardTitle title={article.name} />
       <BodyText text={article.description} />
       <Button href={article.link} text= "Read article">
-        <DocumentIcon />
+        <SvgIcon icon={<DocumentIcon />} />
       </Button>
     </>
   )
