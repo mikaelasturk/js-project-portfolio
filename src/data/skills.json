@@ -1,0 +1,47 @@
+{
+  "skillsList": [
+    {
+      "title": "Code",
+       "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "TypeScript",
+        "React",
+        "Styled Components",
+        "GitHub"
+      ]
+    },
+     {
+      "title": "Toolbox",
+      "skills": [
+        "Figma",
+        "Slack",
+        "Notion",
+        "GitHub Issues",
+        "Excel"
+      ] 
+    },
+    {
+      "title": "Upcoming",
+      "skills": [
+        "Tailwind",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "LIA"
+      ] 
+    },
+    {
+      "title": "More",
+      "skills": [
+        "Copyright Administration",
+        "Music Publishing Administration",
+        "Corporate Administration",
+        "Music Industry Knowledge",
+        "Social Media Management",
+        "Bookkeeping"
+      ] 
+    }
+  ]
+}

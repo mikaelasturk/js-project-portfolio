@@ -18,6 +18,7 @@ export const App = () => {
       <TechSection/>
       <ProjectSection/>
       <ArticleSection/>
+      <SkillsSection/>
     </ThemeProvider>
     </>
 
