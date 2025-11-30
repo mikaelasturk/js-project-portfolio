@@ -1,7 +1,13 @@
-export const PageTitle = ({ title }) => {
+import styled from "styled-components"
+
+const StyledPageTitle = styled.h1`
+  color: ${({ theme, variant }) => variant ? theme.sections[variant].headingClr: "inherit"};
+`;
+
+export const PageTitle = ({ title, variant }) => {
   return (
-    <h1 className="page-title">
+    <StyledPageTitle variant={variant}>
       {title}
-    </h1>
+    </StyledPageTitle>
   )
 }

@@ -1,7 +1,13 @@
-export const SectionTitle = ({ title }) => {
+import styled from "styled-components";
+
+const StyledSectionTitle = styled.h2`
+  color: ${({ theme, variant }) => variant ? theme.sections[variant].headingClr: "inherit"};
+`
+
+export const SectionTitle = ({ title, variant }) => {
   return (
-    <h2 className="section-title">
+    <StyledSectionTitle variant={variant}>
       {title}
-    </h2>
+    </StyledSectionTitle>
   )
 }

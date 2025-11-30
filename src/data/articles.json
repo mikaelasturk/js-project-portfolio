@@ -1,19 +1,19 @@
 {
   "articles": [
     {
-      "name": "Text",
+      "name": "Title",
       "image": "",
       "date": "month year",
-      "alt": "Text",
-      "description": "Text",
+      "alt": "Picture of...",
+      "description": "About this arcticle",
       "link": ""
     },
     {
-      "name": "Text",
+      "name": "Title",
       "image": "",
       "date": "month year",
-      "alt": "Text",
-      "description": "Text",
+      "alt": "Picture of...",
+      "description": "About this arcticle",
       "link": ""
     }
   ]

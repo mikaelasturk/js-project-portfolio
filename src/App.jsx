@@ -14,11 +14,18 @@ export const App = () => {
     <>
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <HeroSection/>
-      <TechSection/>
-      <ProjectSection/>
-      <ArticleSection/>
-      <SkillsSection/>
+      <header>
+        <HeroSection variant="hero"/> 
+      </header>
+      <main> 
+        <TechSection variant="tech"/>
+        <ProjectSection variant="projects"/>
+        <ArticleSection/>
+        <SkillsSection/>
+      </main>
+      <footer>
+        <ContactSection/>
+      </footer>
     </ThemeProvider>
     </>
 

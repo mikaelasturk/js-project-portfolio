@@ -1,14 +1,47 @@
+import styled from 'styled-components'
 import { Avatar } from '../ui/ui'
 import { BodyText, PageTitle } from '../typography/typography'
-import { intro, role, description, avatar_url } from "../../data/aboutMe"
+import { intro, role, description, avatar } from "../../data/aboutMe"
+import { StyledSection } from '../../styles/StyledSection'
 
-export const HeroSection = () => {
+const MobileOnly = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+const Desktop = styled.div`
+  @media (max-width: 767px) {
+    display: none;
+  }
+`
+
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+export const HeroSection = ({ variant }) => {
   return (
-    <header>
-      <Avatar src={avatar_url} />
-      <BodyText text={intro} />
-      <PageTitle title={role}/>
-      <BodyText text={description} />
-    </header>
+    <>
+      <MobileOnly>
+        <StyledSection variant={variant}>
+        <Avatar />
+        <BodyText text={intro} />
+        <PageTitle title={role} variant={variant} />
+        <BodyText text={description} />
+        </StyledSection>
+      </MobileOnly>
+      <Desktop>
+        <StyledSection variant={variant}>
+        <BodyText text={intro} />
+        <PageTitle title={role} variant={variant} />
+        <StyledDiv>
+          <Avatar />
+          <BodyText text={description} />
+        </StyledDiv>
+        </StyledSection>
+      </Desktop>
+    </>
   )
 }

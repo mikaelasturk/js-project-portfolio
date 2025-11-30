@@ -2,51 +2,112 @@ import { createGlobalStyle } from "styled-components"
 
 
 export const GlobalStyle = createGlobalStyle`
-
   :root {
+    /* Font settings */
+    --font-heading: "Montserrat", Arial, sans-serif;
+    --font-txt: "Hind", Arial, sans-serif;
+    --weight-normal: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --xxs-font-size: 18px;
+    --xs-font-size: 24px;
+    --s-font-size: 32px;
+    --m-font-size: 56px;
+    --l-font-size: 68px;
+    --xl-font-size: 80px;
+    --h1-font-weight: var(--weight-bold);
+    --h2-font-weight: var(--weight-bold);
+    --h3-font-weight: var(--weight-semibold);
 
-    /* Main settings */
-    --font-header: "Montserrat", Arial, sans-serif;
-    --font-text: "Hind", Arial, sans-serif;
-    --highlight-primary-color: #0B24F5;
-    --highlight-secondary-color: #FF4575;
-    --border-radius-buttons: 40px;
-    --primary-bg-color: #FFFFFF;
-    --primary-text-color: #000000;
-    --primary-accent-color: #0B24F5;
-    --secondary-bg-color: #0B24F5;
-    --secondary-text-color: #FFFFFF;
+    /* Mobile */
+    --h1-font-size-mobile: var(--xs-font-size);
+    --h2-font-size-mobile: var(--m-font-size);
+    --h3-font-size-mobile: var(--xs-font-size);
+   
+    /* Tablet */
+    --h1-font-size-tablet: var(--m-font-size);
+    --h2-font-size-tablet: var(--l-font-size);
+    --h3-font-size-tablet: var(--xs-font-size);
 
-    /* Project Buttons */
-    --card-btn-bg-color: #F5F5F5;
-    --card-btn-text-color: #333333;
-    --github-btn-hover-bg-color: #FFFFFF;
-    --github-btn-hover-text-color: #EB5577;
-    --netlify-btn-hover-bg-color: #0B24F5;
-    --netlify-btn-hover-text-color: #FFFFFF;
+    /* Desktop */
+    --h1-font-size-desktop: var(--xl-font-size);
+    --h2-font-size-desktop: var(--xl-font-size);
+    --h3-font-size-desktop: var(--s-font-size);
+    
+    /* Main colors */
+    --1st-clr: #000000;
+    --2nd-clr: #FFFFFF;
+    --3rd-clr: #0B24F5;
+    --4th-clr: #FF4575;
 
-    /* Article Section */
-    --article-bg-color: #FFECEA;
+    /* Highlight colors */
+    --highlight-1st: var(--3rd-clr);
+    --highlight-2nd: var(--4th-clr);
 
-    /* Article Button */
-    --article-btn-bg-color: #FFFFFF;
-    --article-btn-text-color : #333333;
-    --article-btn-hover-bg-color: #FFD338;
-    --article-btn-hover-text-color: #000000;
+    /* Background colors */
+    --1st-bg-clr: var(--2nd-clr);
+    --2nd-bg-clr: var(--3rd-clr);
+    --3rd-bg-clr: #FFECEA;
+    
+    /* Accent colors */
+    --acc-1st-clr: #EB5577;
+    --acc-2nd-clr: #2483E0;
+    --acc-3rd-clr: #6DB486;
+    --acc-4th-clr: #FFDE30;
 
-    /* SoMe links/icon */
-    --icon-color: #D0D0D0;
-    --icon-hover-color: #000000;
+    /* SoMe links/icon colors*/
+    --icon-clr: #D0D0D0;
+    --icon-hover-clr: #000000;
 
-    /* Tag */
-    --tag-bg-color: #000000;
-    --tag-text-color: #FFFFFF;
+    /* Tag styling */
+    --tag-bg-clr: #000000;
+    --tag-txt-clr: #FFFFFF;
+    --tag-font-size: 16px;
+    --tag-font-weight: var(--weight-semibold);
+    --tag-font: var(--font-heading);
 
-    /* Special Colors */
-    --skill-list-code-color: #EB5577;
-    --skill-list-toolbox-color: #2483E0;
-    --skill-list-upcoming-color: #6DB486;
-    --skill-list-more-color: #FFDE30;
+    /* Button styling */
+    --1st-btn-bg-clr: #F5F5F5;
+    --1st-btn-txt-clr: #333333;
+    --2nd-btn-bg-clr: #FFFFFF;
+    --2nd-btn-txt-clr: #333333;
+    --btn-border-radius: 40px;
+    --btn-font-size: 20px;
+    --btn-font-weight: var(--weight-semibold);
+    --btn-font: var(--font-heading);
+    --btn-margin: 0 10px;
+    --btn-padding: 4px 24px;
+
+    /* Button hover color variations  */
+    --code-btn-hover-bg-clr: var(--highlight-1st);
+    --code-btn-hover-txt-clr: #FFFFFF;
+    --demo-btn-hover-bg-clr: #EB5577;
+    --demo-btn-hover-txt-clr: #FFFFFF;
+    --article-btn-hover-bg-clr: #FFD338;
+    --article-btn-hover-txt-clr: #000000;
+
+    /* Hero, Project and Contact section colors */
+    --section1-bg-clr: var(--1st-bg-clr);
+    --section1-txt-clr: var(--1st-clr);
+    --section1-highlight-clr: var(--highlight-1st);
+    --section1-btn-bg-clr: var(--1st-btn-bg-clr);
+    --section1-btn-txt-clr: var(--1st-btn-txt-clr);
+
+    /* Tech & Skill Section colors */
+    --section2-bg-clr: var(--2nd-bg-clr);
+    --section2-txt-clr: var(--2nd-clr);
+    --section2-heading-clr: var(--2nd-clr);
+    --section2-subheading1-bg-clr: var(--acc-1st-clr);
+    --section2-subheading2-bg-clr: var(--acc-2nd-clr);
+    --section2-subheading3-bg-clr: var(--acc-3rd-clr);
+    --section2-subheading4-bg-clr: var(--acc-4th-clr);  
+
+    /* Article Section colors */
+    --section3-bg-clr: var(--3rd-bg-clr);
+    --section3-txt-clr: var(--1st-clr);
+    --section3-highlight-clr: var(--highlight-2nd);
+    --section3-btn-bg-clr: var(--2nd-btn-bg-clr);
+    --section3-btn-txt-clr: var(--2nd-btn-txt-clr);
   }
 
   /* Reset */
@@ -59,12 +120,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     min-height: 100vh;
     line-height: 1.5;
-    font-family: var(--font-text);
-    background-color: var(--bg-color);
-    color: var(--primary-text-color);
+    font-family: var(--font-txt);
   }
 
   img, picture, video, canvas, svg {
@@ -78,20 +141,63 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    font-family: var(--font-header);
+    font-family: var(--font-heading);
   }
 
   p {
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
+    font-size: var(--xxs-font-size);
   }
 
   ul, ol {
     list-style: none;
   }
 
-  img.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 0%;
+  h1 {
+    font-size: var(--h1-font-size-mobile);
+    font-weight: var(--h1-font-weight);
   }
-  `
+    
+  h2 {
+    font-size: var(--h2-font-size-mobile);
+    font-weight: var(--h2-font-weight);
+  }
+    
+  h3 {
+    font-size: var(--h3-font-size-mobile);
+    font-weight: var(--h3-font-weight);
+  }
+  
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    h1 {
+      font-size: var(--h1-font-size-tablet);
+    }
+      
+    h2 {
+      font-size: var(--h2-font-size-tablet);
+    }
+      
+    h3 {
+      font-size: var(--h3-font-size-tablet);
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    h1 {
+      font-size: var(--h1-font-size-desktop);
+    }
+      
+    h2 {
+      font-size: var(--h2-font-size-desktop);
+    }
+      
+    h3 {
+      font-size: var(--h3-font-size-desktop);
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktopLarge}) {
+
+  }
+`

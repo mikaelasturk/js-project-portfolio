@@ -1,7 +1,12 @@
-    export const BodyText = ({ text }) => {
-      return (
-        <p className="body-text">
-          {text}
-    </p>
+import styled from "styled-components"
+
+const StyledBodyText = styled.p`
+`;
+
+export const BodyText = ({ text }) => {
+  return (
+    <StyledBodyText>
+      {text}
+    </StyledBodyText>
   )
 }

@@ -27,21 +27,6 @@
       ],
       "netlify": "https://malizioso-test1.netlify.app/",
       "github": "https://github.com/mikaelasturk/js-project-business-site"
-    },
-     {
-      "name": "",
-      "image": "",
-      "alt": "",
-      "description": "Text",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "TypeScript",
-        "APIs"
-      ],
-      "netlify": "",
-      "github": ""
     }
   ]
 }

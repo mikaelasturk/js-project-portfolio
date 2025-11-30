@@ -1,11 +1,14 @@
 import { SectionTitle } from "../typography/SectionTitle"
-import { BodyText } from "../typography/BodyText"
+import { CardTitle } from "../typography/CardTitle"
+import aboutMe from "../../data/aboutMe"
+import { StyledSection } from '../../styles/StyledSection'
 
-export const TechSection = () => {
+
+export const TechSection = ({ variant }) => {
   return (
-    <>
-      <SectionTitle title="Tech Stack" />
-      <BodyText text="Coming soon..." />
-    </>
+    <StyledSection variant={variant}>
+      <SectionTitle title="Tech Stack" variant={variant}/>
+      <CardTitle title={aboutMe.techStack}/>
+    </StyledSection>
   )
 }
