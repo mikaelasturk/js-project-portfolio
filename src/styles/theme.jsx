@@ -61,10 +61,29 @@ export const theme = {
       bgClr: "var(--section2-bg-clr)",
       textClr: "var(--section2-txt-clr)",
       headingClr: "var(--section2-heading-clr)",
-      sub1BgClr: "var(--section2-subheading1-bg-clr)",
-      sub2BgClr: "var(--section2-subheading2-bg-clr)",
-      sub3BgClr: "var(--section2-subheading3-bg-clr)",
-      sub4BgClr: "var(--section2-subheading4-bg-clr)",
+      subBgClr: [
+        {
+          id: "code", 
+          bgClr: "var(--section2-subheading1-bg-clr)",
+          textClr: "var(--section2-subheading1-txt-clr)"  
+
+        },
+        { 
+          id: "toolbox", 
+          bgClr: "var(--section2-subheading2-bg-clr)",
+          textClr: "var(--section2-subheading2-txt-clr)"  
+        },
+        {
+          id: "upcoming", 
+          bgClr: "var(--section2-subheading3-bg-clr)",
+          textClr: "var(--section2-subheading3-txt-clr)"    
+        },
+        {
+          id: "more", 
+          bgClr: "var(--section2-subheading4-bg-clr)",
+          textClr: "var(--section2-subheading4-txt-clr)"  
+        },  
+      ],
     },
     contact: {
       bgClr: "var(--section1-bg-clr)",

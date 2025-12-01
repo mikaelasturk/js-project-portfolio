@@ -11,11 +11,13 @@ const StyledButton = styled.a`
   padding: var(--btn-padding);
   text-decoration: none;
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
   margin-bottom: 1rem;
   max-width: fit-content;
+
 
   &:hover {
     background-color: ${({ theme, variant }) => variant ? theme.buttons[variant].hoverBgClr : "inherit"};

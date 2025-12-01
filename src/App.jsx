@@ -7,7 +7,7 @@ import {
   ArticleSection, 
   SkillsSection, 
   ContactSection 
-} from "./componentsFolder/sectionsFolder/sectionsFile.js"
+} from "./components/sections/sections.js"
 
 export const App = () => {
   return (
@@ -20,11 +20,11 @@ export const App = () => {
       <main> 
         <TechSection variant="tech"/>
         <ProjectSection variant="projects"/>
-        <ArticleSection/>
-        <SkillsSection/>
+        <ArticleSection  variant="articles"/>
+        <SkillsSection variant="skills"/>
       </main>
       <footer>
-        <ContactSection/>
+        <ContactSection variant="contact"/>
       </footer>
     </ThemeProvider>
     </>

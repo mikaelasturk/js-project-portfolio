@@ -7,12 +7,12 @@ export const GlobalStyle = createGlobalStyle`
     --font-heading: "Montserrat", Arial, sans-serif;
     --font-txt: "Hind", Arial, sans-serif;
     --weight-normal: 400;
-    --weight-semibold: 600;
-    --weight-bold: 700;
+    --weight-semibold: 550;
+    --weight-bold: 670;
     --xxs-font-size: 18px;
     --xs-font-size: 24px;
     --s-font-size: 32px;
-    --m-font-size: 56px;
+    --m-font-size: 50px;
     --l-font-size: 68px;
     --xl-font-size: 80px;
     --h1-font-weight: var(--weight-bold);
@@ -75,14 +75,15 @@ export const GlobalStyle = createGlobalStyle`
     --btn-font-size: 20px;
     --btn-font-weight: var(--weight-semibold);
     --btn-font: var(--font-heading);
-    --btn-margin: 0 10px;
-    --btn-padding: 4px 24px;
+    --btn-margin: 0px;
+    --btn-padding: 0 16px 0 0;
 
     /* Button hover color variations  */
-    --code-btn-hover-bg-clr: var(--highlight-1st);
-    --code-btn-hover-txt-clr: #FFFFFF;
-    --demo-btn-hover-bg-clr: #EB5577;
+   
+    --demo-btn-hover-bg-clr: var(--highlight-1st);
     --demo-btn-hover-txt-clr: #FFFFFF;
+    --code-btn-hover-bg-clr: var(--highlight-2nd);
+    --code-btn-hover-txt-clr: #FFFFFF;
     --article-btn-hover-bg-clr: #FFD338;
     --article-btn-hover-txt-clr: #000000;
 
@@ -98,10 +99,14 @@ export const GlobalStyle = createGlobalStyle`
     --section2-txt-clr: var(--2nd-clr);
     --section2-heading-clr: var(--2nd-clr);
     --section2-subheading1-bg-clr: var(--acc-1st-clr);
+    --section2-subheading1-txt-clr: var(--2nd-clr);
     --section2-subheading2-bg-clr: var(--acc-2nd-clr);
+    --section2-subheading2-txt-clr: var(--2nd-clr);
     --section2-subheading3-bg-clr: var(--acc-3rd-clr);
+    --section2-subheading3-txt-clr: var(--2nd-clr);
     --section2-subheading4-bg-clr: var(--acc-4th-clr);  
-
+    --section2-subheading4-txt-clr: var(--3rd-clr);
+    
     /* Article Section colors */
     --section3-bg-clr: var(--3rd-bg-clr);
     --section3-txt-clr: var(--1st-clr);
@@ -126,8 +131,9 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100vh;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: var(--font-txt);
+    max-width: 100vw;
   }
 
   img, picture, video, canvas, svg {
@@ -142,6 +148,7 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-family: var(--font-heading);
+    line-height: 1.2;
   }
 
   p {

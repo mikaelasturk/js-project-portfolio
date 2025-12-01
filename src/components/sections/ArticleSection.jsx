@@ -1,11 +1,12 @@
 import { SectionTitle } from "../typography/typography"
 import { ArticleCard } from "../cards/cards"
 import articles from "../../data/articles"
+import { StyledSection } from '../../styles/StyledSection'
 
-export const ArticleSection = () => {
+export const ArticleSection = ({ variant }) => {
   return (
-    <>
-      <SectionTitle title="My words" />
+    <StyledSection variant={variant} gap="56px" padding="120px 16px">
+      <SectionTitle title="My words" variant={variant} />
       
       {articles.articles.map((article, index) => (
         <ArticleCard
@@ -13,6 +14,6 @@ export const ArticleSection = () => {
           article={article}
         />
       ))}
-    </>
+    </StyledSection>
   ) 
 }

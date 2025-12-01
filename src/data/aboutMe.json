@@ -1,11 +1,11 @@
 {
-  "name": "Mikaela Sturk",
-  "phone": "0707731727",
+  "name": "Mikaela Mangert Sturk",
+  "phone": "+46(0)707 73 17 27",
   "email": "mikaelasturk@gmail.com",
   "intro": "Hi, I'm Mikaela Sturk",
   "role": "Fullstack Developer",
   "avatar": "/images/avatar.jpg",
   "alt": "Avatar of Mikaela Sturk",
   "description": "Mikaela is a thoughtful and detail-oriented developer with a strong sense for structure, clarity, and user-focused design. With a background in music publishing and administration, she brings a rare combination of precision, creativity, and problem-solving into her code. She builds intuitive, accessible applications and approaches complex challenges with calm, analytical thinking. Her drive to learn and improve makes her a valuable addition to any team and a promising developer in the tech field.",
-  "techStack": "Coming soon..."
+  "techStack": "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, Github."
 }

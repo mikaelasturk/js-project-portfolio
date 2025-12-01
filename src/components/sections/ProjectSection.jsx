@@ -5,7 +5,7 @@ import { StyledSection } from '../../styles/StyledSection'
 
 export const ProjectSection = ({ variant }) => {
   return (
-    <StyledSection variant={variant}>
+    <StyledSection variant={variant} gap="56px" padding="120px 16px">
       <SectionTitle title="Featured projects" variant={variant} />
       
       {projects.projects.map((project, index) => (
