@@ -7,7 +7,7 @@ import {
   ArticleSection, 
   SkillsSection, 
   ContactSection 
-} from "./components/sections/sections.js"
+} from "./componentsFolder/sectionsFolder/sectionsFile.js"
 
 export const App = () => {
   return (

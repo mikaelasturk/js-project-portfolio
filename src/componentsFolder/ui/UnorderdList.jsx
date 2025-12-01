@@ -1,4 +1,4 @@
-import { ListItem } from "../ui/ui"
+import { ListItem } from "./ui"
 
 export const UnorderedList = ({ items }) => {
   return (
