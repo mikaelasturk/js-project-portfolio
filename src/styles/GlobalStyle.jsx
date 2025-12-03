@@ -20,20 +20,26 @@ export const GlobalStyle = createGlobalStyle`
     --h3-font-weight: var(--weight-semibold);
 
     /* Mobile */
-    --h1-font-size-mobile: var(--xs-font-size);
-    --h2-font-size-mobile: var(--m-font-size);
-    --h3-font-size-mobile: var(--xs-font-size);
+    --h1-font-size-mobile: 27.5px;
+    --h2-font-size-mobile: 50px;
+    --h3-font-size-mobile: 24px;
    
     /* Tablet */
-    --h1-font-size-tablet: var(--m-font-size);
-    --h2-font-size-tablet: var(--l-font-size);
-    --h3-font-size-tablet: var(--xs-font-size);
+    --h1-font-size-tablet: 55px;
+    --h2-font-size-tablet: 55px;
+    --h3-font-size-tablet: 24px;
 
     /* Desktop */
-    --h1-font-size-desktop: var(--xl-font-size);
-    --h2-font-size-desktop: var(--xl-font-size);
-    --h3-font-size-desktop: var(--s-font-size);
-    
+    --h1-font-size-desktop: 68px;
+    --h2-font-size-desktop: 68px;
+    --h3-font-size-desktop: 28px;
+
+    /* Desktop */
+    --h1-font-size-desktopL: 80px;
+    --h2-font-size-desktopL: 80px;
+    --h3-font-size-desktopL: 32px;
+    --p-font-size-desktopL: 28px;
+
     /* Main colors */
     --1st-clr: #000000;
     --2nd-clr: #FFFFFF;
@@ -79,7 +85,6 @@ export const GlobalStyle = createGlobalStyle`
     --btn-padding: 0 16px 0 0;
 
     /* Button hover color variations  */
-   
     --demo-btn-hover-bg-clr: var(--highlight-1st);
     --demo-btn-hover-txt-clr: #FFFFFF;
     --code-btn-hover-bg-clr: var(--highlight-2nd);
@@ -205,6 +210,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktopLarge}) {
+     h1 {
+      font-size: var(--h1-font-size-desktopL);
+    }
+      
+    h2 {
+      font-size: var(--h2-font-size-desktopL);
+    }
+      
+    h3 {
+      font-size: var(--h3-font-size-desktopL);
+    }
 
+    p {
+      font-size: var(--p-font-size-desktopL);
+    }
   }
 `

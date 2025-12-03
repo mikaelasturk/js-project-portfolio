@@ -5,7 +5,8 @@ export const StyledSkillTitle = styled.h3`
   color: ${({ theme, $index }) => theme.sections.skills.subBgClr[$index].textClr || "inherit"};
   max-width: fit-content;
   padding: 0 8px;
-  
+
+
 `
 
 export const SkillTitle = ({ title, index }) => {

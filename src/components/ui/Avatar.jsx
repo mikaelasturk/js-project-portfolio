@@ -8,11 +8,9 @@ export const StyledAvatar = styled.img`
   object-fit: cover;
   object-position: 50% 35%;
   flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
+  margin: 0 auto;
+  
 `;
 
 export const Avatar = () => {

@@ -7,18 +7,18 @@ const StyledSkillColumn = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 24px;
+  gap: 16px;
 
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    text-align: left;
+    align-items: flex-start;
   }
 `
 
 export const SkillColumn = ({ skillsList, colIndex }) => {
   return (
     <StyledSkillColumn>
-    <SkillTitle title={skillsList.title} index={colIndex} />
+      <SkillTitle title={skillsList.title} index={colIndex} />
       <UnorderedList items={skillsList.skills} />
     </StyledSkillColumn>
   )

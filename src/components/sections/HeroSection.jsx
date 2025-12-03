@@ -4,52 +4,62 @@ import { BodyText, PageTitle } from '../typography/typography'
 import { intro, role, description, avatar } from "../../data/aboutMe"
 import { StyledSection } from '../../styles/StyledSection'
 
-const MobileOnly = styled.div`
-  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+// Don't show from Tablet breakpoint and up
+const MobileLayout = styled.div`
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: none;
   }
 `
-
-const Desktop = styled.div`
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+// Don't show up until Tablet breakpoint
+const DesktopLayout = styled.div`
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: none;
   }
 `
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
-`
-
-const StyledMessage = styled.div`
+// Grouping into and PageTitle
+const StyledContainer1 = styled.div`
   display: flex;
   flex-direction: column;
+`
+
+// Grouping Avatar and description
+const StyledContainer2 = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 28px;
 `
 
 export const HeroSection = ({ variant }) => {
   return (
     <>
-      <MobileOnly>
-        <StyledSection variant={variant} gap="32px">
+      <MobileLayout >  
+        <StyledSection variant={variant} padding="56px 16px" gap="32px">
           <Avatar />
-          <StyledMessage>
+          <StyledContainer1>
             <BodyText text={intro} weight="semibold" fontFam="heading" />
             <PageTitle title={role} variant={variant} />
-          </StyledMessage>
+          </StyledContainer1>
           <BodyText text={description} />
         </StyledSection>
-      </MobileOnly>
-      <Desktop>
-        <StyledSection variant={variant}>
-          <StyledMessage>
-            <BodyText text={intro} />
+      </MobileLayout >
+      <DesktopLayout >
+        <StyledSection variant={variant} 
+        paddingTablet="120px 32px" 
+        paddingDesktop="330px 160px 180px"
+        paddingDesktopL="330px 230px"
+        gapTablet="44px">
+          <StyledContainer1>
+            <BodyText text={intro} weight="semibold" fontFam="heading"
+            fontSizeT="tablet"
+            fontSizeD="desktop" />
             <PageTitle title={role} variant={variant} />
-          </StyledMessage>
-          <StyledDiv>
+          </StyledContainer1>
+          <StyledContainer2>
             <Avatar />
             <BodyText text={description} />
-          </StyledDiv>
+          </StyledContainer2>
         </StyledSection>
-      </Desktop>
+      </DesktopLayout >
     </>
   )
 }

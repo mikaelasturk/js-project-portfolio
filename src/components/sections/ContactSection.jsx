@@ -5,7 +5,9 @@ import aboutMe from '../../data/aboutMe'
 import { StyledSection } from '../../styles/StyledSection'
 
 const StyledDiv = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 
@@ -16,9 +18,12 @@ export const ContactSection = ({ variant }) => {
       <SectionTitle title="Let's talk!" variant={variant} />
       <Avatar />
       <StyledDiv>
-        <BodyText text={aboutMe.name} weight="semibold" fontSize="xs" fontFam="heading"/>
-        <BodyText text={aboutMe.phone} weight="semibold" fontSize="xs" fontFam="heading"/>
-        <BodyText text={aboutMe.email} weight="semibold" fontSize="xs" fontFam="heading"/>
+        <BodyText text={aboutMe.name} weight="semibold" fontSizeT="tablet"
+        fontSizeD="desktop"fontFam="heading"/>
+        <BodyText text={aboutMe.phone} weight="semibold" fontSizeT="tablet"
+        fontSizeD="desktop"fontFam="heading"/>
+        <BodyText text={aboutMe.email} weight="semibold" fontSizeT="tablet"
+        fontSizeD="desktop"fontFam="heading"/>
       </StyledDiv>
     </StyledSection>
   )

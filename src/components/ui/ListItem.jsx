@@ -1,7 +1,13 @@
+import styled from "styled-components"
+
+const StyledListItem = styled.li`
+  font-family: var(--font-heading);
+`
+
 export const ListItem = ({ item }) => {
   return (
-    <li>
+    <StyledListItem>
       {item}
-    </li>
+    </StyledListItem>
   )
 }

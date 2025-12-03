@@ -1,9 +1,9 @@
 export const theme = {
   breakpoints: {
-    mobile: "768px",
-    tablet: "1024px",
-    desktop: "1440px",
-    desktopLarge: "1441px",
+    mobile: "360px",
+    tablet: "745px", //(768 is my usual default)
+    desktop: "1024px",
+    desktopLarge: "1440px",
   },
 
   //---------------//
